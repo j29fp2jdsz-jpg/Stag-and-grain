@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Stag & Grain | Furniture Restoration South Wales</title>
+<meta name="description" content="Contact Stag & Grain for restored Stag furniture, furniture restoration, bespoke finishes and Sell Your Stag enquiries.">
+<style>
+:root{--paper:#f6f1e8;--cream:#fbf8f2;--white:#fffdfa;--ink:#1e211c;--muted:#68645c;--green:#192c22;--gold:#a87b43;--line:#d9cfbf;--shadow:0 20px 60px rgba(36,30,22,.08)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif}a{color:inherit}.shell{width:min(980px,calc(100% - 32px));margin:auto}header{border-bottom:1px solid var(--line);background:rgba(246,241,232,.96)}.header{height:98px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:21px;letter-spacing:.12em;text-decoration:none}.back{font:700 10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}main{padding:72px 0 90px}.hero{text-align:center;max-width:760px;margin:0 auto 44px}.kicker{font:700 10px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}h1{font-size:clamp(48px,8vw,78px);line-height:.95;font-weight:400;margin:12px 0 20px;letter-spacing:-.04em}.hero p{font:15px/1.8 Arial,sans-serif;color:var(--muted)}.grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:start}.card{background:var(--white);box-shadow:var(--shadow);padding:34px}.card h2{font-size:34px;font-weight:400;margin:0 0 16px}.card p{font:14px/1.75 Arial,sans-serif;color:var(--muted)}.email{display:block;margin:18px 0 26px;font-size:22px;color:var(--green);word-break:break-word}.details{border-top:1px solid var(--line);padding-top:18px;margin-top:20px;font:12px/1.7 Arial,sans-serif;color:var(--muted)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}label{font:700 9px Arial,sans-serif;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}input,select,textarea{width:100%;padding:13px;border:1px solid var(--line);background:#fff;font:14px Arial,sans-serif}textarea{min-height:130px;resize:vertical}button{margin-top:16px;border:0;background:var(--green);color:#fff;padding:15px 20px;font:700 10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}.status{margin-top:12px;font:12px/1.5 Arial,sans-serif;min-height:18px}.status.success{color:#315c3b}.status.error{color:#8b2f22}@media(max-width:760px){.grid{grid-template-columns:1fr}.header{height:82px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}main{padding-top:46px}}
+</style>
+</head>
+<body>
+<header><div class="shell header"><a class="brand" href="index.html">STAG & GRAIN</a><a class="back" href="index.html">Back to site</a></div></header>
+<main class="shell">
+  <div class="hero">
+    <div class="kicker">Contact Stag & Grain</div>
+    <h1>Tell us what you have in mind.</h1>
+    <p>For restored furniture, bespoke finishes, restoration work or Sell Your Stag enquiries, get in touch and we’ll come back to you.</p>
+  </div>
+  <div class="grid">
+    <section class="card">
+      <div class="kicker">Email us</div>
+      <h2>Get in touch</h2>
+      <p>You can email us directly at:</p>
+      <a class="email" href="mailto:stagandgrain@gmail.com">stagandgrain@gmail.com</a>
+      <div class="details"><strong>Based in South Wales</strong><br>Furniture restoration • Restored Stag furniture • Bespoke finishes • Sell Your Stag</div>
+    </section>
+    <section class="card">
+      <div class="kicker">Send an enquiry</div>
+      <h2>Contact form</h2>
+      <form action="https://formsubmit.co/stagandgrain@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Stag & Grain website enquiry">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <div class="form-grid">
+          <div class="field"><label>Name</label><input name="name" required></div>
+          <div class="field"><label>Email</label><input name="email" type="email" required></div>
+          <div class="field full"><label>Enquiry type</label><select name="enquiry_type"><option>Furniture enquiry</option><option>Furniture restoration</option><option>Sell Your Stag</option><option>Bespoke finish</option><option>General enquiry</option></select></div>
+          <div class="field full"><label>Message</label><textarea name="message" required></textarea></div>
+        </div>
+        <button type="submit">Send enquiry</button>
+        <div class="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </div>
+</main>
+<script>
+document.querySelector('form').addEventListener('submit',async function(e){e.preventDefault();const form=this,status=form.querySelector('.status'),btn=form.querySelector('button');const old=btn.textContent;btn.disabled=true;btn.textContent='Sending…';status.textContent='';try{const payload={};new FormData(form).forEach((v,k)=>{if(k!=='_honey')payload[k]=v});const r=await fetch('https://formsubmit.co/ajax/stagandgrain@gmail.com',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)});if(!r.ok)throw new Error();status.textContent='Thank you — your enquiry has been sent.';status.className='status success';form.reset()}catch(e){status.textContent='Sorry, the message could not be sent. Please email stagandgrain@gmail.com.';status.className='status error'}finally{btn.disabled=false;btn.textContent=old}});
+</script>
+</body>
+</html>
