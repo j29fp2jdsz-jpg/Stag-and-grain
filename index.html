@@ -12,7 +12,12 @@
 <meta property="og:title" content="Stag & Grain | Vintage Furniture Restoration">
 <meta property="og:description" content="Thoughtfully restored furniture, Stag specialism and bespoke finishes from South Wales.">
 <meta property="og:url" content="https://stagandgrain.com/">
+<meta property="og:image" content="https://stagandgrain.com/api/og">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Stag & Grain vintage furniture restoration, South Wales">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://stagandgrain.com/api/og">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Stag & Grain","url":"https://stagandgrain.com/","email":"stagandgrain@gmail.com","description":"Vintage furniture restoration, restored Stag furniture and bespoke finishes from South Wales.","areaServed":"United Kingdom","address":{"@type":"PostalAddress","addressRegion":"Wales","addressCountry":"GB"}}</script>
 <style>html,body{margin:0;background:#f6f1e8}body{min-height:100vh}</style>
 </head>
@@ -34,7 +39,7 @@
     if(!description){description=doc.createElement('meta');description.setAttribute('name','description');doc.head.appendChild(description)}
     description.setAttribute('content','Furniture restoration, restored Stag furniture and selected Stag buying and trade-in from South Wales.');
 
-    doc.querySelectorAll('link[rel="canonical"], meta[name="robots"], meta[property^="og:"], meta[name="twitter:card"], script[data-stag-schema]').forEach(function(el){el.remove();});
+    doc.querySelectorAll('link[rel="canonical"], meta[name="robots"], meta[property^="og:"], meta[name="twitter:card"], meta[name="twitter:image"], script[data-stag-schema]').forEach(function(el){el.remove();});
     function add(tag, attrs, text){var el=doc.createElement(tag);Object.keys(attrs||{}).forEach(function(k){el.setAttribute(k,attrs[k])});if(text)el.textContent=text;doc.head.appendChild(el);return el}
     add('link',{rel:'canonical',href:'https://stagandgrain.com/'});
     add('meta',{name:'robots',content:'index,follow,max-image-preview:large'});
@@ -43,7 +48,12 @@
     add('meta',{property:'og:title',content:'Stag & Grain | Vintage Furniture Restoration'});
     add('meta',{property:'og:description',content:'Thoughtfully restored furniture, Stag specialism and bespoke finishes from South Wales.'});
     add('meta',{property:'og:url',content:'https://stagandgrain.com/'});
+    add('meta',{property:'og:image',content:'https://stagandgrain.com/api/og'});
+    add('meta',{property:'og:image:width',content:'1200'});
+    add('meta',{property:'og:image:height',content:'630'});
+    add('meta',{property:'og:image:alt',content:'Stag & Grain vintage furniture restoration, South Wales'});
     add('meta',{name:'twitter:card',content:'summary_large_image'});
+    add('meta',{name:'twitter:image',content:'https://stagandgrain.com/api/og'});
     var schema=add('script',{'type':'application/ld+json','data-stag-schema':'true'});
     schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'LocalBusiness','name':'Stag & Grain','url':'https://stagandgrain.com/','email':'stagandgrain@gmail.com','description':'Vintage furniture restoration, restored Stag furniture and bespoke finishes from South Wales.','areaServed':'United Kingdom','address':{'@type':'PostalAddress','addressRegion':'Wales','addressCountry':'GB'}});
 
