@@ -34,6 +34,10 @@
     if(work) work.remove();
     doc.querySelectorAll('a[href="#work"]').forEach(function(link){link.remove();});
 
+    doc.querySelectorAll('p,.form-note,.form-status,small').forEach(function(el){
+      if((el.textContent||'').includes('Before launch we’ll connect this form to the final Stag & Grain inbox')) el.remove();
+    });
+
     doc.title='Stag & Grain | Restored Vintage & Bedroom Furniture';
     var description=doc.querySelector('meta[name="description"]');
     if(!description){description=doc.createElement('meta');description.setAttribute('name','description');doc.head.appendChild(description)}
