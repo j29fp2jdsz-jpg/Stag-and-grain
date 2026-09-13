@@ -43,7 +43,7 @@
     if(!description){description=doc.createElement('meta');description.setAttribute('name','description');doc.head.appendChild(description)}
     description.setAttribute('content','Restored vintage furniture from South Wales, including wardrobes, chests of drawers, bedside furniture and matching bedroom sets, with delivery along the M4 corridor.');
 
-    doc.querySelectorAll('link[rel="canonical"], meta[name="robots"], meta[property^="og:"], meta[name="twitter:card"], meta[name="twitter:image"], script[data-stag-schema]').forEach(function(el){el.remove();});
+    doc.querySelectorAll('link[rel="canonical"], meta[name="robots"], meta[property^="og:"], meta[name="twitter:card"], meta[name="twitter:image"], script[data-stag-schema], script[data-stag-ga], script[data-stag-vercel-analytics]').forEach(function(el){el.remove();});
     function add(tag, attrs, text){var el=doc.createElement(tag);Object.keys(attrs||{}).forEach(function(k){el.setAttribute(k,attrs[k])});if(text)el.textContent=text;doc.head.appendChild(el);return el}
     add('link',{rel:'canonical',href:'https://stagandgrain.com/'});
     add('meta',{name:'robots',content:'index,follow,max-image-preview:large'});
@@ -60,6 +60,11 @@
     add('meta',{name:'twitter:image',content:'https://stagandgrain.com/api/og'});
     var schema=add('script',{'type':'application/ld+json','data-stag-schema':'true'});
     schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'LocalBusiness','name':'Stag & Grain','url':'https://stagandgrain.com/','email':'stagandgrain@gmail.com','description':'Restored vintage furniture, bedroom furniture, Stag specialism and bespoke finishes from South Wales.','areaServed':[{'@type':'Place','name':'South Wales'},{'@type':'City','name':'Cardiff'},{'@type':'City','name':'Newport'},{'@type':'City','name':'Bristol'},{'@type':'City','name':'Bath'},{'@type':'City','name':'Swindon'},{'@type':'City','name':'Reading'},{'@type':'Place','name':'West London'}],'address':{'@type':'PostalAddress','addressRegion':'Wales','addressCountry':'GB'}});
+
+    add('script',{async:'',src:'https://www.googletagmanager.com/gtag/js?id=G-949PGFR36C','data-stag-ga':'loader'});
+    var ga=add('script',{'data-stag-ga':'config'});
+    ga.textContent="window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-949PGFR36C');";
+    add('script',{defer:'',src:'/_vercel/insights/script.js','data-stag-vercel-analytics':'true'});
 
     var seoStyle=doc.createElement('style');
     seoStyle.textContent='.m4-service-area{padding:72px 0;border-top:1px solid var(--line,#d9cfbf);background:var(--cream,#fbf8f2)}.m4-service-area .m4-inner{width:min(920px,calc(100% - 40px));margin:auto;text-align:center}.m4-service-area .m4-kicker{margin:0 0 10px;color:var(--gold,#a87b43);font:700 10px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase}.m4-service-area h2{margin:0 0 16px;font:400 clamp(34px,4vw,52px)/1.05 Georgia,serif;letter-spacing:-.03em;color:var(--ink,#1e211c)}.m4-service-area p{margin:0 auto;max-width:820px;font:14px/1.85 Arial,sans-serif;color:var(--muted,#68645c)}.m4-service-area .m4-route{margin-top:18px;font:700 10px/1.6 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--green,#192c22)}@media(max-width:600px){.m4-service-area{padding:54px 0}.m4-service-area .m4-inner{width:min(100% - 28px,920px)}}';
