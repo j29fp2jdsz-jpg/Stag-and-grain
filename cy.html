@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="cy">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stag & Grain | Dodrefn Vintage wedi'u Hadfer</title>
+<meta name="description" content="Dodrefn vintage wedi'u hadfer yn Ne Cymru, gan gynnwys cypyrddau dillad, cistiau droriau, dodrefn wrth ochr y gwely a setiau ystafell wely cyfatebol, gyda danfon ar hyd coridor yr M4.">
+<link rel="canonical" href="https://stagandgrain.com/cy.html">
+<link rel="alternate" hreflang="en-GB" href="https://stagandgrain.com/">
+<link rel="alternate" hreflang="cy-GB" href="https://stagandgrain.com/cy.html">
+<link rel="alternate" hreflang="x-default" href="https://stagandgrain.com/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Stag & Grain">
+<meta property="og:title" content="Stag & Grain | Dodrefn Vintage wedi'u Hadfer">
+<meta property="og:description" content="Dodrefn vintage wedi'u hadfer yn ofalus yn Ne Cymru, gyda gorffeniadau pwrpasol a danfon ar hyd coridor yr M4.">
+<meta property="og:url" content="https://stagandgrain.com/cy.html"><meta property="og:image" content="https://stagandgrain.com/api/og">
+<style>html,body{margin:0;background:#f6f1e8}body{min-height:100vh}</style>
+</head>
+<body>
+<script>
+(async function(){
+var source='https://raw.githubusercontent.com/j29fp2jdsz-jpg/Stag-and-grain/3b9a222f2bae2a79182af3f57cf31deb6e9e0d6c/index.html';
+try{
+ var response=await fetch(source,{cache:'no-store'}); if(!response.ok)throw new Error('load');
+ var html=await response.text(); var doc=new DOMParser().parseFromString(html,'text/html'); doc.documentElement.lang='cy';
+ var work=doc.querySelector('#work');if(work)work.remove();doc.querySelectorAll('a[href="#work"]').forEach(function(a){a.remove()});
+ doc.querySelectorAll('p,.form-note,.form-status,small').forEach(function(el){if((el.textContent||'').includes('Before launch we’ll connect this form to the final Stag & Grain inbox'))el.remove()});
+ var phrases={
+ 'Furniture':'Dodrefn','Restoration':'Adfer','Sell Your Stag':'Gwerthu Eich Stag','Contact':'Cysylltu','Shop on Etsy':'Siopa ar Etsy','View on Etsy':'Gweld ar Etsy','Enquire':'Holi','Enquire now':'Holi nawr','Get in touch':'Cysylltwch â ni','Send enquiry':'Anfon ymholiad','Name':'Enw','Email':'E-bost','Message':'Neges','Enquiry type':'Math o ymholiad','General enquiry':'Ymholiad cyffredinol','Furniture enquiry':'Ymholiad am ddodrefn','Furniture restoration':'Adfer dodrefn','Bespoke finish':'Gorffeniad pwrpasol','Our furniture':'Ein dodrefn','Our story':'Ein stori','About us':'Amdanom ni','How it works':'Sut mae’n gweithio','Available now':'Ar gael nawr','Choose your finish':'Dewiswch eich gorffeniad','Selected finish':'Gorffeniad a ddewiswyd','Bespoke finishes':'Gorffeniadau pwrpasol','South Wales':'De Cymru','Based in South Wales':'Wedi ein lleoli yn Ne Cymru','Delivery available':'Danfon ar gael','Contact Stag & Grain':'Cysylltu â Stag & Grain','Restored furniture':'Dodrefn wedi’u hadfer','Vintage furniture':'Dodrefn vintage','Thoughtfully restored. Ready for its next chapter.':'Wedi’i adfer yn ofalus. Yn barod am ei bennod nesaf.','Thoughtfully restored':'Wedi’i adfer yn ofalus','Ready for its next chapter.':'Yn barod am ei bennod nesaf.','Restored in Wales. Ready for its next chapter.':'Wedi’i adfer yng Nghymru. Yn barod am ei bennod nesaf.','Tell us what you have in mind.':'Dywedwch wrthym beth sydd gennych mewn golwg.','Email us':'E-bostiwch ni','Back to site':'Yn ôl i’r wefan','Prefer to email us directly?':'Gwell gennych e-bostio ni’n uniongyrchol?','Tap here to send us an email':'Tapiwch yma i anfon e-bost atom','Deep Forest':'Gwyrdd Coedwig Dywyll','Rich Navy':'Glas Tywyll Cyfoethog','Warm Ivory':'Ifori Cynnes','Dusty Blue':'Glas Llychlyd','Black':'Du','Your details':'Eich manylion','What are you looking for?':'Beth ydych chi’n chwilio amdano?','Submit':'Anfon','Close':'Cau'
+ };
+ function translateText(root){var walker=doc.createTreeWalker(root,NodeFilter.SHOW_TEXT);var nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);nodes.forEach(function(n){var raw=n.nodeValue,trim=raw.trim();if(phrases[trim])n.nodeValue=raw.replace(trim,phrases[trim]);});}
+ translateText(doc.body);
+ doc.querySelectorAll('input,textarea').forEach(function(el){var p=el.getAttribute('placeholder');if(p&&phrases[p])el.setAttribute('placeholder',phrases[p])});
+ doc.querySelectorAll('option').forEach(function(el){var t=el.textContent.trim();if(phrases[t])el.textContent=phrases[t]});
+ var style=doc.createElement('style');style.textContent='.lang-switch{display:flex;gap:5px;align-items:center;font:700 10px Arial,sans-serif;letter-spacing:.08em}.lang-switch a{padding:7px 8px;border:1px solid rgba(168,123,67,.45);text-decoration:none}.lang-switch .active{background:#192c22;color:#fff;border-color:#192c22}@media(max-width:920px){.lang-switch{position:absolute;right:12px;top:12px;z-index:60}}';doc.head.appendChild(style);
+ var sw=doc.createElement('div');sw.className='lang-switch';sw.setAttribute('aria-label','Dewis iaith');sw.innerHTML='<a href="/" lang="en">EN</a><a href="/cy.html" lang="cy" class="active" aria-current="page">CY</a>';
+ var hi=doc.querySelector('.header-inner');if(hi){var nr=hi.querySelector('.nav.right');if(nr)nr.appendChild(sw);else hi.appendChild(sw)}else doc.body.insertBefore(sw,doc.body.firstChild);
+ var footer=doc.querySelector('footer');if(footer){var note=doc.createElement('p');note.setAttribute('lang','cy');note.style.cssText='text-align:center;font:12px/1.6 Arial,sans-serif;color:#68645c;margin:24px auto 0';note.textContent='Wedi’i adfer yng Nghymru. Yn barod am ei bennod nesaf.';footer.appendChild(note)}
+ doc.title='Stag & Grain | Dodrefn Vintage wedi\'u Hadfer';
+ document.open();document.write('<!doctype html>'+doc.documentElement.outerHTML);document.close();
+}catch(e){document.body.innerHTML='<main lang="cy" style="max-width:700px;margin:80px auto;padding:24px;font-family:Georgia,serif"><h1>Stag & Grain</h1><p>Adnewyddwch y dudalen, os gwelwch yn dda.</p><p><a href="/">English</a></p></main>'}
+})();
+</script>
+</body></html>
