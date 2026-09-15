@@ -1,91 +1,32 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Stag & Grain | Restored Vintage & Bedroom Furniture</title>
 <meta name="description" content="Restored vintage furniture from South Wales, including wardrobes, chests of drawers, bedside furniture and matching bedroom sets, with delivery along the M4 corridor.">
-<link rel="canonical" href="https://stagandgrain.com/">
+<link rel="canonical" href="https://stagandgrain.com/"><link rel="alternate" hreflang="en-GB" href="https://stagandgrain.com/"><link rel="alternate" hreflang="cy-GB" href="https://stagandgrain.com/cy.html"><link rel="alternate" hreflang="x-default" href="https://stagandgrain.com/">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Stag & Grain">
-<meta property="og:title" content="Stag & Grain | Restored Vintage Furniture">
-<meta property="og:description" content="Thoughtfully restored vintage furniture, bedroom pieces and bespoke finishes from South Wales, with delivery along the M4 corridor.">
-<meta property="og:url" content="https://stagandgrain.com/">
-<meta property="og:image" content="https://stagandgrain.com/api/og">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Stag & Grain vintage furniture restoration, South Wales">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://stagandgrain.com/api/og">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Stag & Grain","url":"https://stagandgrain.com/","email":"stagandgrain@gmail.com","description":"Restored vintage furniture, bedroom furniture, Stag specialism and bespoke finishes from South Wales.","areaServed":[{"@type":"Place","name":"South Wales"},{"@type":"City","name":"Cardiff"},{"@type":"City","name":"Newport"},{"@type":"City","name":"Bristol"},{"@type":"City","name":"Bath"},{"@type":"City","name":"Swindon"},{"@type":"City","name":"Reading"},{"@type":"Place","name":"West London"}],"address":{"@type":"PostalAddress","addressRegion":"Wales","addressCountry":"GB"}}</script>
+<meta property="og:type" content="website"><meta property="og:site_name" content="Stag & Grain"><meta property="og:title" content="Stag & Grain | Restored Vintage Furniture"><meta property="og:description" content="Thoughtfully restored vintage furniture, bedroom pieces and bespoke finishes from South Wales, with delivery along the M4 corridor."><meta property="og:url" content="https://stagandgrain.com/"><meta property="og:image" content="https://stagandgrain.com/api/og"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://stagandgrain.com/api/og">
 <style>html,body{margin:0;background:#f6f1e8}body{min-height:100vh}</style>
-</head>
-<body>
-<script>
+</head><body><script>
 (async function(){
-  var source='https://raw.githubusercontent.com/j29fp2jdsz-jpg/Stag-and-grain/3b9a222f2bae2a79182af3f57cf31deb6e9e0d6c/index.html';
-  try{
-    var response=await fetch(source,{cache:'no-store'});
-    if(!response.ok) throw new Error('Could not load site');
-    var html=await response.text();
-    var doc=new DOMParser().parseFromString(html,'text/html');
-    var work=doc.querySelector('#work');
-    if(work) work.remove();
-    doc.querySelectorAll('a[href="#work"]').forEach(function(link){link.remove();});
-
-    doc.querySelectorAll('p,.form-note,.form-status,small').forEach(function(el){
-      if((el.textContent||'').includes('Before launch we’ll connect this form to the final Stag & Grain inbox')) el.remove();
-    });
-
-    doc.title='Stag & Grain | Restored Vintage & Bedroom Furniture';
-    var description=doc.querySelector('meta[name="description"]');
-    if(!description){description=doc.createElement('meta');description.setAttribute('name','description');doc.head.appendChild(description)}
-    description.setAttribute('content','Restored vintage furniture from South Wales, including wardrobes, chests of drawers, bedside furniture and matching bedroom sets, with delivery along the M4 corridor.');
-
-    doc.querySelectorAll('link[rel="canonical"], meta[name="robots"], meta[property^="og:"], meta[name="twitter:card"], meta[name="twitter:image"], script[data-stag-schema], script[data-stag-ga], script[data-stag-vercel-analytics]').forEach(function(el){el.remove();});
-    function add(tag, attrs, text){var el=doc.createElement(tag);Object.keys(attrs||{}).forEach(function(k){el.setAttribute(k,attrs[k])});if(text)el.textContent=text;doc.head.appendChild(el);return el}
-    add('link',{rel:'canonical',href:'https://stagandgrain.com/'});
-    add('meta',{name:'robots',content:'index,follow,max-image-preview:large'});
-    add('meta',{property:'og:type',content:'website'});
-    add('meta',{property:'og:site_name',content:'Stag & Grain'});
-    add('meta',{property:'og:title',content:'Stag & Grain | Restored Vintage Furniture'});
-    add('meta',{property:'og:description',content:'Thoughtfully restored vintage furniture, bedroom pieces and bespoke finishes from South Wales, with delivery along the M4 corridor.'});
-    add('meta',{property:'og:url',content:'https://stagandgrain.com/'});
-    add('meta',{property:'og:image',content:'https://stagandgrain.com/api/og'});
-    add('meta',{property:'og:image:width',content:'1200'});
-    add('meta',{property:'og:image:height',content:'630'});
-    add('meta',{property:'og:image:alt',content:'Stag & Grain vintage furniture restoration, South Wales'});
-    add('meta',{name:'twitter:card',content:'summary_large_image'});
-    add('meta',{name:'twitter:image',content:'https://stagandgrain.com/api/og'});
-    var schema=add('script',{'type':'application/ld+json','data-stag-schema':'true'});
-    schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'LocalBusiness','name':'Stag & Grain','url':'https://stagandgrain.com/','email':'stagandgrain@gmail.com','description':'Restored vintage furniture, bedroom furniture, Stag specialism and bespoke finishes from South Wales.','areaServed':[{'@type':'Place','name':'South Wales'},{'@type':'City','name':'Cardiff'},{'@type':'City','name':'Newport'},{'@type':'City','name':'Bristol'},{'@type':'City','name':'Bath'},{'@type':'City','name':'Swindon'},{'@type':'City','name':'Reading'},{'@type':'Place','name':'West London'}],'address':{'@type':'PostalAddress','addressRegion':'Wales','addressCountry':'GB'}});
-
-    add('script',{async:'',src:'https://www.googletagmanager.com/gtag/js?id=G-949PGFR36C','data-stag-ga':'loader'});
-    var ga=add('script',{'data-stag-ga':'config'});
-    ga.textContent="window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-949PGFR36C');";
-    add('script',{defer:'',src:'/_vercel/insights/script.js','data-stag-vercel-analytics':'true'});
-
-    var seoStyle=doc.createElement('style');
-    seoStyle.textContent='.m4-service-area{padding:72px 0;border-top:1px solid var(--line,#d9cfbf);background:var(--cream,#fbf8f2)}.m4-service-area .m4-inner{width:min(920px,calc(100% - 40px));margin:auto;text-align:center}.m4-service-area .m4-kicker{margin:0 0 10px;color:var(--gold,#a87b43);font:700 10px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase}.m4-service-area h2{margin:0 0 16px;font:400 clamp(34px,4vw,52px)/1.05 Georgia,serif;letter-spacing:-.03em;color:var(--ink,#1e211c)}.m4-service-area p{margin:0 auto;max-width:820px;font:14px/1.85 Arial,sans-serif;color:var(--muted,#68645c)}.m4-service-area .m4-route{margin-top:18px;font:700 10px/1.6 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--green,#192c22)}@media(max-width:600px){.m4-service-area{padding:54px 0}.m4-service-area .m4-inner{width:min(100% - 28px,920px)}}';
-    doc.head.appendChild(seoStyle);
-
-    if(!doc.querySelector('.m4-service-area')){
-      var section=doc.createElement('section');
-      section.className='m4-service-area';
-      section.setAttribute('aria-label','Restored vintage furniture delivery area');
-      section.innerHTML='<div class="m4-inner"><p class="m4-kicker">South Wales · M4 Corridor</p><h2>Restored vintage furniture, delivered further.</h2><p>Stag & Grain restores individual pieces and matching furniture sets, including wardrobes, chests of drawers, bedside furniture and bedroom storage. Alongside our Stag specialism, we work with quality vintage and mid-century furniture selected for its character and craftsmanship. Pieces are available finished or, where suitable, prepared for a bespoke colour and finish.</p><p class="m4-route">Delivery available across Cardiff, Newport, Bristol, Bath, Swindon, Reading and West London.</p></div>';
-      var footer=doc.querySelector('footer');
-      if(footer && footer.parentNode){footer.parentNode.insertBefore(section,footer)}else{doc.body.appendChild(section)}
-    }
-
-    document.open();
-    document.write('<!doctype html>'+doc.documentElement.outerHTML);
-    document.close();
-  }catch(error){
-    document.body.innerHTML='<main style="max-width:700px;margin:80px auto;padding:24px;font-family:Georgia,serif;color:#1e211c"><h1>Stag & Grain</h1><p>Please refresh the page.</p></main>';
-  }
+ var source='https://raw.githubusercontent.com/j29fp2jdsz-jpg/Stag-and-grain/3b9a222f2bae2a79182af3f57cf31deb6e9e0d6c/index.html';
+ try{
+  var response=await fetch(source,{cache:'no-store'});if(!response.ok)throw new Error('Could not load site');
+  var html=await response.text();var doc=new DOMParser().parseFromString(html,'text/html');doc.documentElement.lang='en-GB';
+  var work=doc.querySelector('#work');if(work)work.remove();doc.querySelectorAll('a[href="#work"]').forEach(function(a){a.remove()});
+  doc.querySelectorAll('p,.form-note,.form-status,small').forEach(function(el){if((el.textContent||'').includes('Before launch we’ll connect this form to the final Stag & Grain inbox'))el.remove()});
+  doc.title='Stag & Grain | Restored Vintage & Bedroom Furniture';
+  function ensureMeta(sel,attrs){var el=doc.querySelector(sel);if(!el){el=doc.createElement(attrs.tag||'meta');doc.head.appendChild(el)}Object.keys(attrs).forEach(function(k){if(k!=='tag')el.setAttribute(k,attrs[k])});return el}
+  ensureMeta('meta[name="description"]',{name:'description',content:'Restored vintage furniture from South Wales, including wardrobes, chests of drawers, bedside furniture and matching bedroom sets, with delivery along the M4 corridor.'});
+  doc.querySelectorAll('link[rel="canonical"],link[rel="alternate"]').forEach(function(e){e.remove()});
+  [['canonical','https://stagandgrain.com/',null],['alternate','https://stagandgrain.com/','en-GB'],['alternate','https://stagandgrain.com/cy.html','cy-GB'],['alternate','https://stagandgrain.com/','x-default']].forEach(function(x){var l=doc.createElement('link');l.rel=x[0];l.href=x[1];if(x[2])l.hreflang=x[2];doc.head.appendChild(l)});
+  var style=doc.createElement('style');style.textContent='.lang-switch{display:flex;gap:5px;align-items:center;font:700 10px Arial,sans-serif;letter-spacing:.08em}.lang-switch a{padding:7px 8px;border:1px solid rgba(168,123,67,.45);text-decoration:none}.lang-switch .active{background:#192c22;color:#fff;border-color:#192c22}@media(max-width:920px){.lang-switch{position:absolute;right:12px;top:12px;z-index:60}}';doc.head.appendChild(style);
+  var sw=doc.createElement('div');sw.className='lang-switch';sw.setAttribute('aria-label','Language');sw.innerHTML='<a href="/" lang="en" class="active" aria-current="page">EN</a><a href="/cy.html" lang="cy">CY</a>';var hi=doc.querySelector('.header-inner');if(hi){var nr=hi.querySelector('.nav.right');if(nr)nr.appendChild(sw);else hi.appendChild(sw)}else doc.body.insertBefore(sw,doc.body.firstChild);
+  var seoStyle=doc.createElement('style');seoStyle.textContent='.m4-service-area{padding:72px 0;border-top:1px solid var(--line,#d9cfbf);background:var(--cream,#fbf8f2)}.m4-service-area .m4-inner{width:min(920px,calc(100% - 40px));margin:auto;text-align:center}.m4-service-area .m4-kicker{margin:0 0 10px;color:var(--gold,#a87b43);font:700 10px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase}.m4-service-area h2{margin:0 0 16px;font:400 clamp(34px,4vw,52px)/1.05 Georgia,serif;color:var(--ink,#1e211c)}.m4-service-area p{margin:0 auto;max-width:820px;font:14px/1.85 Arial,sans-serif;color:var(--muted,#68645c)}.m4-service-area .m4-route{margin-top:18px;font:700 10px/1.6 Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--green,#192c22)}';doc.head.appendChild(seoStyle);
+  if(!doc.querySelector('.m4-service-area')){var s=doc.createElement('section');s.className='m4-service-area';s.innerHTML='<div class="m4-inner"><p class="m4-kicker">South Wales · M4 Corridor</p><h2>Restored vintage furniture, delivered further.</h2><p>Stag & Grain restores individual pieces and matching furniture sets, including wardrobes, chests of drawers, bedside furniture and bedroom storage. Alongside our Stag specialism, we work with quality vintage and mid-century furniture selected for its character and craftsmanship. Pieces are available finished or, where suitable, prepared for a bespoke colour and finish.</p><p class="m4-route">Delivery available across Cardiff, Newport, Bristol, Bath, Swindon, Reading and West London.</p></div>';var f=doc.querySelector('footer');if(f&&f.parentNode)f.parentNode.insertBefore(s,f);else doc.body.appendChild(s)}
+  var footer=doc.querySelector('footer');if(footer){var note=doc.createElement('p');note.style.cssText='text-align:center;font:12px/1.6 Arial,sans-serif;color:#68645c;margin:24px auto 0';note.textContent='Restored in Wales. Ready for its next chapter.';footer.appendChild(note)}
+  document.open();document.write('<!doctype html>'+doc.documentElement.outerHTML);document.close();
+ }catch(error){document.body.innerHTML='<main style="max-width:700px;margin:80px auto;padding:24px;font-family:Georgia,serif;color:#1e211c"><h1>Stag & Grain</h1><p>Please refresh the page.</p></main>'}
 })();
-</script>
-</body>
-</html>
+</script></body></html>
