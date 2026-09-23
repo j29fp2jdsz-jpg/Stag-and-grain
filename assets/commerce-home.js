@@ -8,7 +8,7 @@
     const s=document.createElement("section");
     s.id="available-stock";
     s.className="sg-available-banner";
-    s.innerHTML='<div class="sg-shell sg-banner-grid"><div class="sg-banner-copy"><p class="sg-kicker">Current collection</p><h2>Furniture ready for its next home.</h2><p>Explore our currently available restored vintage furniture, including Stag Minstrel pieces and one-off restorations.</p><p class="sg-banner-delivery">Prices exclude delivery. UK delivery is available and quoted separately based on location.</p><a class="sg-btn sg-primary" href="/available/">View Available Furniture</a></div><div class="sg-banner-media"><img class="sg-banner-lifestyle" src="/assets/brand/stag-grain-current-collection-lifestyle.webp" alt="Restored Stag & Grain furniture styled in a warm heritage interior" loading="lazy"></div></div>';
+    s.innerHTML='<div class="sg-shell sg-banner-grid"><div class="sg-banner-copy"><p class="sg-kicker">Available to buy now</p><h2>Shop our fully restored furniture.</h2><p>Click through to see the furniture currently available to purchase from Stag &amp; Grain. Each piece has been carefully restored and hand-finished in South Wales, ready for its next home.</p><p class="sg-banner-delivery">One-off restored pieces · Available now · UK delivery available and quoted separately by location</p><a class="sg-btn sg-primary" href="/available/">See Furniture Available Now</a></div><div class="sg-banner-media"><img class="sg-banner-lifestyle" src="/assets/brand/stag-grain-current-collection-lifestyle.webp" alt="Restored Stag & Grain furniture styled in a warm heritage interior" loading="lazy"></div></div>';
     trust.insertAdjacentElement("afterend",s);
   }
 
