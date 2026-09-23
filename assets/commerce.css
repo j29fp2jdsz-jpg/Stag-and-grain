@@ -44,3 +44,144 @@
 .sg-bespoke-media img{width:100%;height:100%;object-fit:cover;object-position:center center}
 @media(max-width:920px){.sg-bespoke-grid{grid-template-columns:1fr}.sg-bespoke-copy{padding:42px 32px}.sg-bespoke-media{min-height:360px}}
 @media(max-width:600px){.sg-bespoke-banner{padding-bottom:34px}.sg-bespoke-copy{padding:34px 22px}.sg-bespoke-media{min-height:300px}.sg-bespoke-cta{width:100%}}
+
+/* Homepage alternating colour rhythm */
+#craftsmanship{
+  background:var(--cream);
+  color:var(--ink);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+#craftsmanship .sg-craft-copy .sg-kicker{color:var(--gold)}
+#craftsmanship .sg-craft-copy h2{color:var(--ink)}
+#craftsmanship .sg-craft-copy>p:not(.sg-kicker){color:var(--muted)}
+#craftsmanship .sg-text-link{color:var(--green)}
+#craftsmanship .sg-craft-images img{background:#efe7db}
+
+#restoration{
+  background:var(--green);
+  color:#fff;
+  padding-top:78px;
+  padding-bottom:78px;
+}
+#restoration .split-card{
+  background:transparent;
+  box-shadow:none;
+  border:1px solid rgba(255,255,255,.15);
+}
+#restoration .split-copy{background:transparent}
+#restoration .split-copy h2{color:#fff}
+#restoration .split-copy>p:not(.kicker){color:rgba(255,255,255,.74)}
+#restoration .split-copy .kicker{color:#caa879}
+#restoration .step{color:rgba(255,255,255,.74)}
+#restoration .step b{border-color:#caa879;color:#caa879}
+#restoration .enquiry-box{
+  background:#f0e8dc;
+  color:var(--ink);
+}
+#restoration .enquiry-box .kicker{color:var(--gold)}
+#restoration .enquiry-box p{color:var(--muted)}
+#restoration .enquiry-box .button{
+  background:var(--green);
+  color:#fff;
+}
+
+#sell{
+  background:var(--cream);
+  color:var(--ink);
+}
+#sell .split-card{
+  background:var(--white);
+  box-shadow:var(--shadow);
+  border:0;
+}
+#sell .split-copy h2{color:var(--ink)}
+#sell .split-copy>p:not(.kicker){color:var(--muted)}
+#sell .split-copy .kicker{color:var(--gold)}
+#sell .step{color:var(--muted)}
+#sell .step b{border-color:var(--gold);color:var(--gold)}
+#sell .enquiry-box{
+  background:var(--green);
+  color:#fff;
+}
+#sell .enquiry-box .kicker{color:#caa879}
+#sell .enquiry-box p{color:rgba(255,255,255,.74)}
+#sell .enquiry-box .button{
+  background:#fff;
+  color:var(--green);
+}
+
+#about{
+  background:var(--green);
+  color:#fff;
+}
+#about .about-card{
+  background:transparent;
+  box-shadow:none;
+  border:1px solid rgba(255,255,255,.15);
+}
+#about .about-copy .kicker{color:#caa879}
+#about .about-copy h2{color:#fff}
+#about .about-copy p:not(.kicker){color:rgba(255,255,255,.74)}
+#about .about-logo{
+  background:#efe7db;
+}
+#about .about-logo img{
+  background:transparent;
+}
+
+#reviews{
+  background:var(--cream);
+  color:var(--ink);
+}
+
+#contact{
+  background:var(--green);
+  color:#fff;
+  padding-top:90px;
+  padding-bottom:100px;
+}
+#contact .contact-copy .kicker{color:#caa879}
+#contact .contact-copy h2{color:#fff}
+#contact .contact-copy p{color:rgba(255,255,255,.74)}
+#contact .contact-copy .button{
+  background:#fff;
+  color:var(--green);
+}
+#contact .form{
+  background:var(--white);
+  color:var(--ink);
+}
+#contact .form .button.primary{
+  background:var(--green);
+  color:#fff;
+}
+
+.m4-service-area{
+  background:var(--cream)!important;
+  color:var(--ink);
+  border-top:1px solid var(--line);
+}
+.m4-service-area .kicker{color:var(--gold)}
+.m4-service-area p{color:var(--muted)!important}
+
+footer{
+  background:var(--green);
+  color:#fff;
+  border-top:0;
+}
+footer .footer-brand p,
+footer .footer-links,
+footer .footer-links a{
+  color:rgba(255,255,255,.76);
+}
+footer .footer-brand img{
+  background:transparent;
+}
+footer>p{
+  color:rgba(255,255,255,.72)!important;
+}
+
+@media(max-width:920px){
+  #restoration,#contact{padding-top:64px;padding-bottom:64px}
+}
