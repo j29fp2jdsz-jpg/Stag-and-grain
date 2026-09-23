@@ -8,7 +8,7 @@
     const s=document.createElement("section");
     s.id="available-stock";
     s.className="sg-available-banner";
-    s.innerHTML='<div class="sg-shell sg-banner-grid"><div class="sg-banner-copy"><p class="sg-kicker">Current collection</p><h2>Furniture ready for its next home.</h2><p>Explore our currently available restored vintage furniture, including Stag Minstrel pieces and one-off restorations.</p><p class="sg-banner-delivery">Prices exclude delivery. UK delivery is available and quoted separately based on location.</p><a class="sg-btn sg-primary" href="/available/">View Available Furniture</a></div><div class="sg-banner-media" aria-hidden="true"><img class="sg-banner-image sg-banner-image-main" src="/assets/available/aubergine-bedroom-collection.webp" alt=""><img class="sg-banner-image sg-banner-image-accent" src="/assets/available/forest-green-tallboy.jpg" alt=""></div></div>';
+    s.innerHTML='<div class="sg-shell sg-banner-grid"><div class="sg-banner-copy"><p class="sg-kicker">Current collection</p><h2>Furniture ready for its next home.</h2><p>Explore our currently available restored vintage furniture, including Stag Minstrel pieces and one-off restorations.</p><p class="sg-banner-delivery">Prices exclude delivery. UK delivery is available and quoted separately based on location.</p><a class="sg-btn sg-primary" href="/available/">View Available Furniture</a></div><div class="sg-banner-media"><img class="sg-banner-lifestyle" src="/assets/brand/stag-grain-current-collection-lifestyle.webp" alt="Restored Stag & Grain furniture styled in a warm heritage interior" loading="lazy"></div></div>';
     trust.insertAdjacentElement("afterend",s);
   }
 
