@@ -30,3 +30,17 @@
 .sg-product-image{position:sticky;top:30px}.sg-product-info .sg-delivery-note{margin:0 0 16px}.sg-product-actions .sg-btn{min-width:190px}
 @media(max-width:920px){.sg-craft-grid{grid-template-columns:1fr}.sg-craft-images{min-height:380px}.sg-review-grid{grid-template-columns:1fr}.sg-product-image{position:static}}
 @media(max-width:600px){.sg-craft,.sg-reviews{padding:64px 0}.sg-craft-images{grid-template-columns:1fr 1fr;min-height:auto}.sg-craft-images img{height:230px}.sg-craft-images img:first-child{grid-column:1/-1;grid-row:auto;height:300px}.sg-review-actions{flex-direction:column}.sg-review-actions .sg-btn{width:100%}.sg-list-hero{padding-top:48px}.sg-card h3{font-size:27px}.sg-copy{padding:22px 20px 24px}}
+
+/* Bespoke Stag homepage banner */
+.sg-bespoke-banner{padding:0 0 56px;background:var(--cream)}
+.sg-bespoke-grid{display:grid;grid-template-columns:.9fr 1.1fr;min-height:430px;background:var(--green);color:#fff;box-shadow:var(--shadow);overflow:hidden}
+.sg-bespoke-copy{padding:54px;display:flex;flex-direction:column;justify-content:center}
+.sg-bespoke-copy .sg-kicker{color:#caa879}
+.sg-bespoke-copy h2{font:400 clamp(42px,5vw,66px)/.98 Georgia,'Times New Roman',serif;letter-spacing:-.04em;margin:0 0 18px}
+.sg-bespoke-copy>p:not(.sg-kicker):not(.sg-bespoke-reassure){font:14px/1.85 Arial,sans-serif;color:rgba(255,255,255,.76);margin:0 0 18px;max-width:610px}
+.sg-bespoke-reassure{font:700 9px/1.65 Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#ead9bf;margin:0 0 25px}
+.sg-bespoke-cta{align-self:flex-start;background:#fff;color:var(--green)}
+.sg-bespoke-media{min-height:430px;overflow:hidden;background:#e7dccd}
+.sg-bespoke-media img{width:100%;height:100%;object-fit:cover;object-position:center center}
+@media(max-width:920px){.sg-bespoke-grid{grid-template-columns:1fr}.sg-bespoke-copy{padding:42px 32px}.sg-bespoke-media{min-height:360px}}
+@media(max-width:600px){.sg-bespoke-banner{padding-bottom:34px}.sg-bespoke-copy{padding:34px 22px}.sg-bespoke-media{min-height:300px}.sg-bespoke-cta{width:100%}}

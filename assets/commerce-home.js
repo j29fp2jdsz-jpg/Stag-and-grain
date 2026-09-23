@@ -12,6 +12,15 @@
     trust.insertAdjacentElement("afterend",s);
   }
 
+  const available=document.querySelector("#available-stock");
+  if(available&&!document.querySelector("#bespoke-stag-banner")){
+    const b=document.createElement("section");
+    b.id="bespoke-stag-banner";
+    b.className="sg-bespoke-banner";
+    b.innerHTML='<div class="sg-shell sg-bespoke-grid"><div class="sg-bespoke-copy"><p class="sg-kicker">Bespoke Stag</p><h2>Design your own Stag collection.</h2><p>Choose the pieces you need, select one of our signature finishes, or ask us about a colour of your own. From a single bedside cabinet to a coordinated bedroom collection, each piece is restored by hand in South Wales.</p><p class="sg-bespoke-reassure">Seven signature finishes · Bespoke colours available · Individual pieces or full collections</p><a class="sg-btn sg-bespoke-cta" href="/bespoke-stag/">Design Your Set</a></div><div class="sg-bespoke-media"><img src="/assets/hero/stag-grain-hero-black-oak.webp" alt="Stag & Grain restored bedroom furniture in black and natural timber" loading="lazy"></div></div>';
+    available.insertAdjacentElement("afterend",b);
+  }
+
   const restoration=document.querySelector("#restoration");
   if(restoration&&!document.querySelector("#craftsmanship")){
     const c=document.createElement("section");
