@@ -1,4 +1,25 @@
-(function(){const inv=(window.STAG_INVENTORY||[]).filter(p=>p.status==="available");const sold=window.STAG_SOLD||[];const shop=window.STAG_ETSY_SHOP;function card(p,soldFlag){const etsy=p.etsyUrl||shop,etsyLabel=p.etsyUrl?'Buy on Etsy':'Shop on Etsy';return '<article class="sg-card"><div class="sg-media">'+(soldFlag?'<span class="sg-sold-badge">SOLD</span>':'')+'+(p.image?'<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">':'<div class="sg-image-pending">Product photo on Etsy</div>')+'</div><div class="sg-copy"><p class="sg-cat">'+p.category+'</p><h3>'+p.name+'</h3><p class="sg-desc">'+p.short+'</p><p class="sg-price">'+p.priceLabel+'</p><p class="sg-delivery-note">Price excludes delivery. UK delivery is available and quoted separately based on location.</p><div class="sg-actions">'+(soldFlag?'<a class="sg-btn sg-primary" href="/contact.html?product='+encodeURIComponent(p.name)+'&type=Furniture%20enquiry">Enquire about similar</a>':'<a class="sg-btn sg-primary" href="/available/'+p.slug+'/">View Piece</a><a class="sg-btn sg-secondary" href="'+etsy+'" target="_blank" rel="noopener">'+etsyLabel+'</a>')+'</div></div></article>'}
-const trust=document.querySelector(".trust-strip");if(trust&&!document.querySelector("#available-stock")){const s=document.createElement("section");s.id="available-stock";s.className="sg-commerce";s.innerHTML='<div class="sg-shell"><div class="sg-intro"><p class="sg-kicker">Current collection</p><h2>Currently Available</h2><p>Individually restored vintage furniture, finished by hand in South Wales and ready for its next home.</p></div><div class="sg-grid">'+inv.slice(0,6).map(p=>card(p,false)).join("")+'</div><div class="sg-more"><a class="sg-btn sg-secondary" href="/available/">View All Available Pieces</a></div><p class="sg-reassure">South Wales based · UK delivery available · Local collection welcome</p></div>';trust.insertAdjacentElement("afterend",s)}
-const anchor=document.querySelector("#restoration");if(anchor&&sold.length&&!document.querySelector("#recently-sold")){const s=document.createElement("section");s.id="recently-sold";s.className="sg-commerce sg-sold";const body='<div class="sg-grid">'+sold.slice(0,3).map(p=>card(p,true)).join("")+'</div>';s.innerHTML='<div class="sg-shell"><div class="sg-intro"><p class="sg-kicker">Previous restorations</p><h2>Recently Sold</h2><p>Seen something you love? We regularly source and restore Stag and other quality vintage furniture.</p></div>'+body+'</div>';anchor.parentNode.insertBefore(s,anchor)}
+(function(){
+  const sold=window.STAG_SOLD||[];
+
+  const trust=document.querySelector(".trust-strip");
+  if(trust&&!document.querySelector("#available-stock")){
+    const s=document.createElement("section");
+    s.id="available-stock";
+    s.className="sg-available-banner";
+    s.innerHTML='      <div class="sg-shell sg-banner-grid">        <div class="sg-banner-copy">          <p class="sg-kicker">Current collection</p>          <h2>Furniture ready for its next home.</h2>          <p>Explore our currently available restored vintage furniture, including Stag Minstrel pieces and one-off restorations.</p>          <p class="sg-banner-delivery">Prices exclude delivery. UK delivery is available and quoted separately based on location.</p>          <a class="sg-btn sg-primary" href="/available/">View Available Furniture</a>        </div>        <div class="sg-banner-media" aria-hidden="true">          <img class="sg-banner-image sg-banner-image-main" src="/assets/available/aubergine-bedroom-collection.webp" alt="">          <img class="sg-banner-image sg-banner-image-accent" src="/assets/available/forest-green-tallboy.jpg" alt="">        </div>      </div>';
+    trust.insertAdjacentElement("afterend",s);
+  }
+
+  function soldCard(p){
+    return '<article class="sg-card"><div class="sg-media"><span class="sg-sold-badge">SOLD</span>'+(p.image?'<img src="'+p.image+'" alt="'+p.name+'" loading="lazy">':'<div class="sg-image-pending">Product photo on Etsy</div>')+'</div><div class="sg-copy"><p class="sg-cat">'+p.category+'</p><h3>'+p.name+'</h3><p class="sg-desc">'+p.short+'</p><div class="sg-actions"><a class="sg-btn sg-primary" href="/contact.html?product='+encodeURIComponent(p.name)+'&type=Furniture%20enquiry">Enquire about similar</a></div></div></article>';
+  }
+
+  const anchor=document.querySelector("#restoration");
+  if(anchor&&sold.length&&!document.querySelector("#recently-sold")){
+    const s=document.createElement("section");
+    s.id="recently-sold";
+    s.className="sg-commerce sg-sold";
+    s.innerHTML='<div class="sg-shell"><div class="sg-intro"><p class="sg-kicker">Previous restorations</p><h2>Recently Sold</h2><p>Seen something you love? We regularly source and restore Stag and other quality vintage furniture.</p></div><div class="sg-grid">'+sold.slice(0,3).map(soldCard).join("")+'</div></div>';
+    anchor.parentNode.insertBefore(s,anchor);
+  }
 })();
