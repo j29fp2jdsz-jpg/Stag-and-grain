@@ -19,7 +19,7 @@
 <body>
 <script>
 (async function(){
-var source='https://raw.githubusercontent.com/j29fp2jdsz-jpg/Stag-and-grain/3b9a222f2bae2a79182af3f57cf31deb6e9e0d6c/index.html';
+var source='/base-home.html';
 try{
  var response=await fetch(source,{cache:'no-store'}); if(!response.ok)throw new Error('load');
  var html=await response.text(); var doc=new DOMParser().parseFromString(html,'text/html'); doc.documentElement.lang='cy';
