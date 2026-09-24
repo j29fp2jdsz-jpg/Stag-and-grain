@@ -24,12 +24,12 @@
 .sg-media{aspect-ratio:1/1;background:linear-gradient(145deg,#fffefb,#eee5d8)}.sg-media img{padding:12px}
 .sg-craft{padding:88px 0;background:var(--green);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}
 .sg-craft-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:54px;align-items:center}.sg-craft-copy h2{font:400 clamp(40px,5vw,64px)/.98 Georgia,'Times New Roman',serif;letter-spacing:-.035em;margin:0 0 20px}.sg-craft-copy>p:not(.sg-kicker){font:14px/1.85 Arial,sans-serif;color:rgba(255,255,255,.72);max-width:560px;margin:0 0 24px}.sg-craft .sg-kicker{color:#caa879}.sg-text-link{font:700 10px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#fff;text-decoration:none}
-.sg-craft-images{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:1fr 1fr;gap:12px;min-height:470px}.sg-craft-images img{width:100%;height:100%;object-fit:contain;background:#f4eee5}.sg-craft-images img:first-child{grid-row:1/3}
+.sg-craft-images{display:flex;align-items:center;justify-content:center;min-height:470px;background:transparent}.sg-craft-images .sg-craft-composite{width:100%;height:auto;max-height:560px;object-fit:contain;object-position:center center;background:transparent}
 .sg-reviews{padding:88px 0;background:var(--cream);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.sg-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.sg-review-card{background:var(--white);padding:30px;box-shadow:var(--shadow)}.sg-stars{color:var(--gold);letter-spacing:.14em;font-size:14px;margin-bottom:18px}.sg-review-card blockquote{margin:0 0 22px;font:400 23px/1.35 Georgia,'Times New Roman',serif}.sg-review-card p{margin:0;font:11px/1.5 Arial,sans-serif}.sg-review-card p strong,.sg-review-card p span{display:block}.sg-review-card p span{color:var(--muted);margin-top:3px}.sg-review-empty{max-width:720px;margin:0 auto;padding:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center}.sg-review-empty p{margin:0;font:14px/1.8 Arial,sans-serif;color:var(--muted)}.sg-review-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
 .sg-availability{display:inline-flex;align-items:center;gap:7px;font:700 9px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#315c3b;margin:0 0 8px}.sg-availability:before{content:"";width:7px;height:7px;border-radius:50%;background:#315c3b}
 .sg-product-image{position:sticky;top:30px}.sg-product-info .sg-delivery-note{margin:0 0 16px}.sg-product-actions .sg-btn{min-width:190px}
-@media(max-width:920px){.sg-craft-grid{grid-template-columns:1fr}.sg-craft-images{min-height:380px}.sg-review-grid{grid-template-columns:1fr}.sg-product-image{position:static}}
-@media(max-width:600px){.sg-craft,.sg-reviews{padding:64px 0}.sg-craft-images{grid-template-columns:1fr 1fr;min-height:auto}.sg-craft-images img{height:230px}.sg-craft-images img:first-child{grid-column:1/-1;grid-row:auto;height:300px}.sg-review-actions{flex-direction:column}.sg-review-actions .sg-btn{width:100%}.sg-list-hero{padding-top:48px}.sg-card h3{font-size:27px}.sg-copy{padding:22px 20px 24px}}
+@media(max-width:920px){.sg-craft-grid{grid-template-columns:1fr}.sg-craft-images{min-height:auto}.sg-craft-images .sg-craft-composite{max-height:none}.sg-review-grid{grid-template-columns:1fr}.sg-product-image{position:static}}
+@media(max-width:600px){.sg-craft,.sg-reviews{padding:64px 0}.sg-craft-images{min-height:auto}.sg-craft-images .sg-craft-composite{width:100%;height:auto}.sg-review-actions{flex-direction:column}.sg-review-actions .sg-btn{width:100%}.sg-list-hero{padding-top:48px}.sg-card h3{font-size:27px}.sg-copy{padding:22px 20px 24px}}
 
 /* Bespoke Stag homepage banner */
 .sg-bespoke-banner{padding:0 0 56px;background:var(--cream)}
@@ -56,7 +56,7 @@
 #craftsmanship .sg-craft-copy h2{color:var(--ink)}
 #craftsmanship .sg-craft-copy>p:not(.sg-kicker){color:var(--muted)}
 #craftsmanship .sg-text-link{color:var(--green)}
-#craftsmanship .sg-craft-images img{background:#efe7db}
+#craftsmanship .sg-craft-images img{background:transparent}
 
 #restoration{
   background:var(--green);
