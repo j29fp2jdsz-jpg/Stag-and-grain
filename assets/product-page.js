@@ -1,0 +1,17 @@
+window.renderStagProduct=function(slug,rootId){
+ const p=window.STAG_INVENTORY.find(x=>x.slug===slug),root=document.getElementById(rootId||"product-root");
+ if(!p){root.innerHTML="<p>Piece not found.</p>";return}
+ const isNew=p.status==="new-stock",gallery=(p.gallery&&p.gallery.length?p.gallery:(p.image?[p.image]:[]));
+ const enquire="/contact.html?product="+encodeURIComponent(p.name)+"&type=Furniture%20enquiry";
+ const media=gallery.length?'<div class="sg-product-image"><div class="sg-gallery-main"><img id="sg-gallery-main" src="'+gallery[0]+'" alt="'+p.name+'"><button class="sg-gallery-arrow sg-prev" type="button" aria-label="Previous image">‹</button><button class="sg-gallery-arrow sg-next" type="button" aria-label="Next image">›</button></div>'+(gallery.length>1?'<div class="sg-gallery-thumbs">'+gallery.map((src,i)=>'<button type="button" class="sg-gallery-thumb'+(i===0?' active':'')+'" data-index="'+i+'" aria-label="View image '+(i+1)+'"><img src="'+src+'" alt="" loading="lazy"></button>').join("")+'</div>':'')+'</div>':'<div class="sg-product-image"><div class="sg-image-pending" style="min-height:420px">Product photography coming soon</div></div>';
+ const price=isNew?'<p class="sg-new-stock-label">New stock</p>':'<p class="sg-price">'+p.priceLabel+'</p><p class="sg-delivery-note">Price excludes delivery. UK delivery is available and quoted separately based on location.</p>';
+ const availability=isNew?"New stock — enquiries open":"Available";
+ const actions=isNew?'<div class="sg-product-actions"><a class="sg-btn sg-primary" href="'+enquire+'">Enquire Now</a></div>':'<div class="sg-product-actions"><a class="sg-btn sg-primary" href="'+(p.etsyUrl||window.STAG_ETSY_SHOP)+'" target="_blank" rel="noopener">'+(p.etsyUrl?"Buy on Etsy":"Shop on Etsy")+'</a><a class="sg-btn sg-secondary" href="'+enquire+'">Enquire about this piece</a></div>';
+ root.innerHTML=media+'<div class="sg-product-info"><p class="sg-kicker">'+p.category+'</p><h1>'+p.name+'</h1>'+price+'<p class="sg-prose">'+p.full+'</p><div class="sg-details"><div class="sg-row"><strong>Availability</strong><span>'+availability+'</span></div><div class="sg-row"><strong>Dimensions</strong><span>Please enquire for exact dimensions.</span></div><div class="sg-row"><strong>Materials</strong><span>'+p.materials+'</span></div><div class="sg-row"><strong>Restoration</strong><span>'+p.restoration+'</span></div><div class="sg-row"><strong>Condition</strong><span>'+p.condition+'</span></div><div class="sg-row"><strong>Delivery</strong><span>'+p.delivery+'</span></div></div>'+actions+(!isNew&&p.etsyUrl?'<p class="sg-note">The Etsy button opens the exact listing for this piece.</p>':'')+'</div>';
+ if(gallery.length>1){
+  let index=0,main=document.getElementById("sg-gallery-main"),thumbs=[...root.querySelectorAll(".sg-gallery-thumb")];
+  const show=i=>{index=(i+gallery.length)%gallery.length;main.src=gallery[index];thumbs.forEach((b,j)=>b.classList.toggle("active",j===index))};
+  root.querySelector(".sg-prev").addEventListener("click",()=>show(index-1));root.querySelector(".sg-next").addEventListener("click",()=>show(index+1));
+  thumbs.forEach(b=>b.addEventListener("click",()=>show(Number(b.dataset.index))));
+ }
+};
