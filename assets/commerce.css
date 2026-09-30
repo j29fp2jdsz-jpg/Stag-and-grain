@@ -193,3 +193,6 @@ footer>p{
 .sg-gallery-thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:10px}.sg-gallery-thumb{padding:0;border:1px solid var(--line);background:#fff;aspect-ratio:1/1;cursor:pointer;overflow:hidden}.sg-gallery-thumb img{width:100%;height:100%;object-fit:cover}.sg-gallery-thumb.active{outline:2px solid var(--green);outline-offset:1px}
 .sg-new-stock-label{display:inline-block;margin:0 0 20px;padding:9px 12px;background:var(--green);color:#fff;font:700 10px Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase}.sg-new-stock-card{font-size:22px;text-transform:uppercase;letter-spacing:.04em}.sg-availability.sg-new{color:var(--gold)}.sg-availability.sg-new:before{background:var(--gold)}
 @media(max-width:600px){.sg-gallery-thumbs{grid-template-columns:repeat(4,minmax(0,1fr))}.sg-gallery-arrow{width:38px;height:38px}}
+
+/* Ensure primary commerce CTAs remain legible in every link state */
+a.sg-btn.sg-primary,a.sg-btn.sg-primary:link,a.sg-btn.sg-primary:visited,a.sg-btn.sg-primary:hover,a.sg-btn.sg-primary:active{background:var(--green);color:#fff!important}.sg-btn.sg-primary:focus-visible{outline:3px solid #caa879;outline-offset:3px}
