@@ -291,3 +291,16 @@ a.sg-btn.sg-primary,a.sg-btn.sg-primary:link,a.sg-btn.sg-primary:visited,a.sg-bt
  .sg-shop-points span{border-right:0;border-bottom:1px solid #d4c7b4;padding:15px 6px}
  .sg-shop-points span:last-child{border-bottom:0}
 }
+
+/* Homepage department banner: Stag & Grain Clothing */
+.sg-clothing-banner{padding:0 0 56px;background:var(--cream)}
+.sg-clothing-card{display:grid;grid-template-columns:.82fr 1.18fr;min-height:470px;background:#efe7da;color:var(--ink);box-shadow:var(--shadow);overflow:hidden}
+.sg-clothing-copy{padding:58px;display:flex;flex-direction:column;justify-content:center}
+.sg-clothing-copy h2{font:400 clamp(44px,5vw,68px)/.96 Georgia,'Times New Roman',serif;letter-spacing:-.04em;margin:0 0 20px;color:var(--ink)}
+.sg-clothing-copy>p:not(.sg-kicker){font:14px/1.8 Arial,sans-serif;color:var(--muted);max-width:560px;margin:0 0 26px}
+.sg-clothing-cta{align-self:flex-start;background:var(--green);color:#fff}
+.sg-clothing-visual{display:grid;grid-template-columns:repeat(3,1fr);background:#e7ddcf;overflow:hidden}
+.sg-clothing-visual img{display:block;width:100%;height:100%;min-width:0;object-fit:cover;object-position:center;border-left:1px solid rgba(168,123,67,.28)}
+.sg-whole-link{cursor:pointer}.sg-whole-link:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+@media(max-width:920px){.sg-clothing-card{grid-template-columns:1fr}.sg-clothing-copy{padding:44px 32px}.sg-clothing-visual{min-height:360px}}
+@media(max-width:600px){.sg-clothing-banner{padding-bottom:34px}.sg-clothing-copy{padding:36px 22px;text-align:center;align-items:center}.sg-clothing-copy h2{font-size:44px}.sg-clothing-copy>p:not(.sg-kicker){font-size:14px}.sg-clothing-cta{width:100%;align-self:center;min-height:58px}.sg-clothing-visual{min-height:0;aspect-ratio:1/1}.sg-clothing-visual img{object-fit:cover}}
