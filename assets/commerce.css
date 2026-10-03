@@ -232,3 +232,21 @@ a.sg-btn.sg-primary,a.sg-btn.sg-primary:link,a.sg-btn.sg-primary:visited,a.sg-bt
 .sg-shop-window-base{min-height:72px;display:flex;align-items:center;justify-content:center;gap:28px;padding:16px 28px;background:#192c22;border-top:5px solid #a87b43;font:700 9px Arial,sans-serif;letter-spacing:.17em;text-align:center}
 .sg-shop-window-base b{color:#d5b37f;font-weight:700}
 @media(max-width:600px){.sg-shop-window-top{height:86px}.sg-shop-window-top span{font-size:27px}.sg-shop-window-top small{font-size:6px}.sg-shop-window-glass{height:465px;border-left-width:10px;border-right-width:10px}.sg-shop-window-glass:before,.sg-shop-window-glass:after{width:5px}.sg-shop-window-sign{width:82%;padding:27px 18px 25px}.sg-shop-window-sign h2{font-size:40px}.sg-shop-window-sign span{font-size:8px;padding:0 15px}.sg-shop-window-base{min-height:94px;gap:8px;padding:13px 10px;flex-direction:column;font-size:7px}.sg-shop-window-base b{order:-1}}
+
+/* Exact approved storefront-reference composition */
+.sg-storefront{display:block;position:relative;height:760px;overflow:hidden;background:#14271e;color:#fff;text-decoration:none;box-shadow:var(--shadow)}
+.sg-storefront-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.sg-storefront-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(11,20,15,.72) 0%,rgba(11,20,15,.42) 48%,rgba(11,20,15,.04) 78%),linear-gradient(0deg,rgba(11,17,13,.84) 0%,rgba(11,17,13,0) 28%)}
+.sg-storefront-fascia{position:absolute;z-index:3;left:0;right:0;top:0;height:118px;display:flex;align-items:center;justify-content:space-between;padding:0 82px;background:#173329;border-bottom:2px solid #b99564;color:#e9c897}
+.sg-storefront-fascia strong{font:400 clamp(32px,4vw,50px)/1 Georgia,'Times New Roman',serif;letter-spacing:.11em}
+.sg-storefront-stag{font-size:28px;color:#d9b980;opacity:.9}
+.sg-storefront-copy{position:absolute;z-index:4;left:62px;top:190px;width:590px}
+.sg-storefront-copy h2{margin:0;color:#fff;font:400 clamp(50px,5.4vw,72px)/.98 Georgia,'Times New Roman',serif;letter-spacing:-.035em;text-shadow:0 2px 15px rgba(0,0,0,.22)}
+.sg-storefront-copy i{display:block;width:82px;height:3px;background:#d2aa6c;margin:32px 0 27px}
+.sg-storefront-copy p{margin:0 0 34px;color:#fff;font:400 21px/1.48 Georgia,'Times New Roman',serif;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+.sg-storefront-button{display:flex;width:545px;max-width:100%;height:70px;align-items:center;justify-content:center;gap:30px;background:#173329;border:2px solid rgba(255,255,255,.9);color:#fff;font:700 12px Arial,sans-serif;letter-spacing:.19em;box-shadow:0 8px 25px rgba(0,0,0,.18)}
+.sg-storefront-button b{font:30px/1 Georgia,serif;font-weight:400}
+.sg-storefront-benefits{position:absolute;z-index:4;left:0;right:0;bottom:0;height:116px;display:grid;grid-template-columns:repeat(3,1fr);align-items:center;padding:0 50px;background:rgba(16,20,17,.63);border-top:1px solid rgba(255,255,255,.16);backdrop-filter:blur(2px)}
+.sg-storefront-benefits>span{display:flex;align-items:center;justify-content:center;gap:22px;min-height:62px;border-right:1px solid rgba(232,204,163,.65)}
+.sg-storefront-benefits>span:last-child{border-right:0}.sg-storefront-benefits em{font:700 10px/1.7 Arial,sans-serif;letter-spacing:.18em;font-style:normal;color:#fff}.sg-benefit-icon{font:32px/1 Georgia,serif;color:#e3c392;font-weight:400}
+@media(max-width:600px){.sg-available-banner{padding:28px 0}.sg-storefront{height:650px}.sg-storefront-photo{object-position:center}.sg-storefront-fascia{height:78px;padding:0 18px}.sg-storefront-fascia strong{font-size:23px;letter-spacing:.08em}.sg-storefront-stag{font-size:16px}.sg-storefront-copy{left:25px;right:25px;top:132px;width:auto}.sg-storefront-copy h2{font-size:47px;line-height:.98}.sg-storefront-copy i{width:58px;margin:23px 0 20px}.sg-storefront-copy p{font-size:16px;line-height:1.45;margin-bottom:25px}.sg-storefront-copy p br{display:none}.sg-storefront-button{width:100%;height:62px;font-size:9px;letter-spacing:.14em;gap:15px}.sg-storefront-benefits{height:105px;padding:0 8px}.sg-storefront-benefits>span{gap:5px;min-height:68px;padding:0 7px;flex-direction:column;text-align:center}.sg-storefront-benefits em{font-size:6.5px;line-height:1.45;letter-spacing:.1em}.sg-benefit-icon{font-size:20px}}
