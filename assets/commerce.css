@@ -255,3 +255,13 @@ a.sg-btn.sg-primary,a.sg-btn.sg-primary:link,a.sg-btn.sg-primary:visited,a.sg-bt
 .sg-approved-shopfront{display:block;width:100%;background:#173329;box-shadow:var(--shadow);overflow:hidden;text-decoration:none}
 .sg-approved-shopfront img{display:block;width:100%;height:auto;aspect-ratio:1199/1010;object-fit:cover}
 @media(max-width:600px){.sg-available-banner{padding:28px 0}.sg-approved-shopfront{width:100%}.sg-approved-shopfront img{width:100%;height:auto;object-fit:contain}}
+
+/* Storefront display correction: full-bleed and correct proportions */
+#available-stock.sg-available-banner{padding:0;background:#173329}
+#available-stock .sg-shopfront-fullbleed{width:100%;max-width:none;margin:0}
+#available-stock .sg-approved-shopfront{width:100%;max-width:none;margin:0;box-shadow:none}
+#available-stock .sg-approved-shopfront img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;margin:0}
+@media(max-width:600px){
+ #available-stock.sg-available-banner{padding:0}
+ #available-stock .sg-approved-shopfront img{width:100vw;max-width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
+}
