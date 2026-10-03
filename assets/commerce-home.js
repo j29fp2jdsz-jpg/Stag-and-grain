@@ -8,7 +8,7 @@
     const s=document.createElement("section");
     s.id="available-stock";
     s.className="sg-available-banner";
-    s.innerHTML='<div class="sg-shell"><div class="sg-shopfront"><img class="sg-shopfront-image" src="/assets/brand/stag-grain-current-collection-lifestyle.webp" alt="Stag & Grain restored furniture collection" loading="lazy"><div class="sg-shopfront-shade"></div><div class="sg-shopfront-copy"><p class="sg-kicker">The Stag &amp; Grain Shop</p><h2>Shop our fully<br>restored furniture.</h2><span class="sg-shopfront-rule"></span><p>Unique, hand-restored pieces for your home, sourced and finished in South Wales.</p><a class="sg-btn sg-shopfront-cta" href="/available/">See Furniture Available Now <span aria-hidden="true">›</span></a></div><div class="sg-shopfront-features"><span><b>One-off</b> restored pieces</span><span><b>UK delivery</b> available</span><span><b>Quoted separately</b> by location</span></div></div></div>';
+    s.innerHTML='<div class="sg-shell"><a class="sg-shop-window" href="/available/" aria-label="Enter the Stag & Grain furniture shop"><div class="sg-shop-window-top"><span>STAG &amp; GRAIN</span><small>VINTAGE FURNITURE RESTORATION</small></div><div class="sg-shop-window-glass"><img src="/assets/brand/stag-grain-current-collection-lifestyle.webp" alt="Stag & Grain restored furniture collection" loading="lazy"><div class="sg-shop-window-reflection"></div><div class="sg-shop-window-sign"><p>THE COLLECTION</p><h2>Furniture with<br>a story to tell.</h2><span>SHOP AVAILABLE PIECES</span></div></div><div class="sg-shop-window-base"><span>RESTORED BY HAND</span><b>SOUTH WALES</b><span>ONE-OFF VINTAGE PIECES</span></div></a></div>';
     trust.insertAdjacentElement("afterend",s);
   }
 
