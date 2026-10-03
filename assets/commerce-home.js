@@ -8,7 +8,7 @@
     const s=document.createElement("section");
     s.id="available-stock";
     s.className="sg-available-banner";
-    s.innerHTML='<div class="sg-shopfront-fullbleed"><a class="sg-approved-shopfront" href="/available/" aria-label="Shop Stag & Grain restored furniture"><img src="/assets/brand/stag-grain-shopfront.webp" alt="Stag & Grain restored furniture shopfront — shop our fully restored furniture" loading="eager"></a></div>';
+    s.innerHTML='<div class="sg-shop-section"><a class="sg-shop-photo" href="/available/" aria-label="Shop Stag & Grain restored furniture"><img src="/assets/brand/stag-grain-shopfront.webp" alt="Stag & Grain furniture shopfront" loading="eager"></a><div class="sg-shop-content"><p class="sg-kicker">The Stag & Grain Shop</p><h2>Shop our fully restored furniture.</h2><p class="sg-shop-lead">Unique, hand-restored pieces for your home, sourced and finished in South Wales.</p><a class="sg-btn sg-primary sg-shop-cta" href="/available/">See Furniture Available Now <span aria-hidden="true">→</span></a><div class="sg-shop-points" aria-label="Shop information"><span><strong>One-off</strong> restored pieces</span><span><strong>UK delivery</strong> available</span><span><strong>Quoted separately</strong> by location</span></div></div></div>';
     trust.insertAdjacentElement("afterend",s);
   }
 
