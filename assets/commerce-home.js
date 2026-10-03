@@ -8,7 +8,7 @@
     const s=document.createElement("section");
     s.id="available-stock";
     s.className="sg-available-banner";
-    s.innerHTML='<div class="sg-shopfront-fullbleed"><a class="sg-approved-shopfront" href="/available/" aria-label="Shop Stag & Grain restored furniture"><img src="/assets/brand/stag-grain-approved-shopfront.webp" alt="Stag & Grain restored furniture shopfront — shop our fully restored furniture" loading="eager"></a></div>';
+    s.innerHTML='<div class="sg-shopfront-fullbleed"><a class="sg-approved-shopfront" href="/available/" aria-label="Shop Stag & Grain restored furniture"><img src="/assets/brand/stag-grain-shopfront.webp" alt="Stag & Grain restored furniture shopfront — shop our fully restored furniture" loading="eager"></a></div>';
     trust.insertAdjacentElement("afterend",s);
   }
 
