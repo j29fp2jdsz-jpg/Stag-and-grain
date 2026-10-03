@@ -8,7 +8,7 @@
     const s=document.createElement("section");
     s.id="available-stock";
     s.className="sg-available-banner";
-    s.innerHTML='<div class="sg-shell"><a class="sg-storefront" href="/available/" aria-label="See furniture available now"><img class="sg-storefront-photo" src="/assets/brand/stag-grain-current-collection-lifestyle.webp" alt="Stag & Grain furniture shop display" loading="lazy"><div class="sg-storefront-fascia"><span class="sg-storefront-stag">♜</span><strong>STAG &amp; GRAIN</strong><span class="sg-storefront-stag">♜</span></div><div class="sg-storefront-overlay"></div><div class="sg-storefront-copy"><h2>Shop our fully<br>restored furniture.</h2><i></i><p>Unique, hand-restored pieces for your home,<br>sourced and finished in South Wales.</p><span class="sg-storefront-button">SEE FURNITURE AVAILABLE NOW <b>›</b></span></div><div class="sg-storefront-benefits"><span><b class="sg-benefit-icon">♧</b><em>ONE-OFF<br>RESTORED PIECES</em></span><span><b class="sg-benefit-icon">▱</b><em>UK DELIVERY<br>AVAILABLE</em></span><span><b class="sg-benefit-icon">⌖</b><em>QUOTED SEPARATELY<br>BY LOCATION</em></span></div></a></div>';
+    s.innerHTML='<div class="sg-shell"><a class="sg-approved-shopfront" href="/available/" aria-label="Shop Stag & Grain restored furniture"><img src="/assets/stag-grain-shopfront-approved.webp" alt="Stag & Grain restored furniture shopfront — shop our fully restored furniture" loading="lazy"></a></div>';
     trust.insertAdjacentElement("afterend",s);
   }
 
