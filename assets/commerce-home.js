@@ -8,7 +8,7 @@
     const s=document.createElement("section");
     s.id="available-stock";
     s.className="sg-available-banner";
-    s.innerHTML='<div class="sg-shell"><a class="sg-approved-shopfront" href="/available/" aria-label="Shop Stag & Grain restored furniture"><img src="/assets/stag-grain-shopfront-approved.webp" alt="Stag & Grain restored furniture shopfront — shop our fully restored furniture" loading="lazy"></a></div>';
+    s.innerHTML='<div class="sg-shell"><a class="sg-approved-shopfront" href="/available/" aria-label="Shop Stag & Grain restored furniture"><img id="sg-approved-shopfront-img" alt="Stag & Grain restored furniture shopfront — shop our fully restored furniture"></a></div>';Promise.all(['/assets/brand/storefront-data-1.txt','/assets/brand/storefront-data-2.txt','/assets/brand/storefront-data-3.txt'].map(function(u){return fetch(u).then(function(r){return r.text()})})).then(function(parts){var im=document.getElementById('sg-approved-shopfront-img');if(im)im.src='data:image/webp;base64,'+parts.join('')});
     trust.insertAdjacentElement("afterend",s);
   }
 
