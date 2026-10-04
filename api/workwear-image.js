@@ -1,5 +1,5 @@
 const fs=require("fs"),path=require("path"),zlib=require("zlib");
-const ZIP=path.join(process.cwd(),"Stag123.zip");
+const ZIP=path.join(process.cwd(),"Stag1234.zip");
 function findEntry(buf,name){
   for(let i=buf.length-22;i>=0&&i>buf.length-65558;i--){if(buf.readUInt32LE(i)===0x06054b50){const total=buf.readUInt16LE(i+10),off=buf.readUInt32LE(i+16);let p=off;for(let n=0;n<total;n++){if(buf.readUInt32LE(p)!==0x02014b50)break;const method=buf.readUInt16LE(p+10),cs=buf.readUInt32LE(p+20),nl=buf.readUInt16LE(p+28),el=buf.readUInt16LE(p+30),cl=buf.readUInt16LE(p+32),lo=buf.readUInt32LE(p+42),fn=buf.slice(p+46,p+46+nl).toString();if(fn===name){const lnl=buf.readUInt16LE(lo+26),lel=buf.readUInt16LE(lo+28),start=lo+30+lnl+lel,raw=buf.slice(start,start+cs);return method===0?raw:method===8?zlib.inflateRawSync(raw):null}p+=46+nl+el+cl}break}}return null}
 module.exports=(req,res)=>{const f=String(req.query.file||"");if(!/^stag-grain-[a-z0-9-]+\.webp$/.test(f))return res.status(400).end();try{const data=findEntry(fs.readFileSync(ZIP),f);if(!data)return res.status(404).end();res.setHeader("Content-Type","image/webp");res.setHeader("Cache-Control","public, max-age=300, s-maxage=300");res.end(data)}catch(e){console.error("workwear-image",e);res.status(500).end()}};
