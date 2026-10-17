@@ -304,3 +304,8 @@ a.sg-btn.sg-primary,a.sg-btn.sg-primary:link,a.sg-btn.sg-primary:visited,a.sg-bt
 .sg-whole-link{cursor:pointer}.sg-whole-link:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
 @media(max-width:920px){.sg-clothing-card{grid-template-columns:1fr}.sg-clothing-copy{padding:44px 32px}.sg-clothing-visual{min-height:360px}}
 @media(max-width:600px){.sg-clothing-banner{padding-bottom:34px}.sg-clothing-copy{padding:36px 22px;text-align:center;align-items:center}.sg-clothing-copy h2{font-size:44px}.sg-clothing-copy>p:not(.sg-kicker){font-size:14px}.sg-clothing-cta{width:100%;align-self:center;min-height:58px}.sg-clothing-visual{min-height:0;aspect-ratio:1/1}.sg-clothing-visual img{object-fit:cover}}
+
+/* Upright presentation of the original sideways plate collection photograph; source image is untouched. */
+.sg-card-carousel[data-gallery="thomas-kinkade-collector-plates-collection-of-12"] img[src$="/IMG_5323.jpeg"],
+.sg-gallery-main img[src$="/IMG_5323.jpeg"],
+.sg-gallery-thumb img[src$="/IMG_5323.jpeg"]{transform:rotate(90deg);object-fit:contain}
