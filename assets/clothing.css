@@ -4,4 +4,4 @@
 
 /* Black cap: source image contains excessive empty canvas. Crop presentation only. */
 .cw-matrix-item[data-slug="cap"][data-colour="black"]{overflow:hidden}
-.cw-matrix-item[data-slug="cap"][data-colour="black"] img{transform:scale(1.65);transform-origin:center center}
+.cw-matrix-item[data-slug="cap"][data-colour="black"] img{transform:scale(1.32);transform-origin:center center}
